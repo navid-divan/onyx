@@ -33,7 +33,3 @@ A reduced-dimension regime tuned for fast end-to-end validation on resource-cons
 
 In the deniable FHE construction, the per-ciphertext detection probability is `1/delta = 1/(n_delta^2)`. Production mode sets `n_delta = 4` (so `delta = 16`) inside the test pipeline; the paper's full deployment uses `n_delta = 2^14`.
 
-## Compatibility Notes
-
-- The implementation deliberately avoids native C extensions beyond NumPy so it runs without modification on Mac, Linux, Windows, Android Terminal, and `a-Shell` (iOS).
-- The Universal Thresholdizer leverages `{0,1}`-LSSS reconstruction via Shamir secret sharing with integer Lagrange coefficients scaled by `(n_T!)^2` to keep ciphertext noise growth controlled.
