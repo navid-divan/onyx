@@ -1,10 +1,6 @@
-# Onyx
+# Onyx Voting System
 
-Post-Quantum Persistent Coercion-Resistant Voting from Deniable Encryption.
-
-Onyx is the first post-quantum verifiable voting system that satisfies **Persistent Coercion Resistance (PCR)**: a coercer who interrogates a voter at any time after the tally cannot tell a voter who cast as instructed from a voter who used the `Fake` algorithm to fabricate every coin ever consumed by the voting client. Onyx combines a CHide-style cleansing-hiding pipeline operating over a threshold deniable FHE layer, with persistent randomness deniability propagated through every voter-side ciphertext and zero-knowledge proof.
-
-This repository is a faithful, modular reference implementation of the Onyx protocol and all of its lattice-based building blocks: dFHE (Agrawal-Goldwasser-Mossel), Universal Thresholdizer (Boneh et al.), hash-based VSS Π_LA (Baghery), deniable NIZK (LNP'22 with Micciancio-Peikert equivocation), and verifiable mix-net with distributed decryption (Aranha-Baum-Gjøsteen-Silde).
+This is the core implementation of Onyx, which is a post-quantum verifiable voting system that satisfies **Persistent Coercion Resistance (PCR)**: a coercer who interrogates a voter at any time after the tally cannot tell a voter who cast as instructed from a voter who used the `Fake` algorithm to fabricate every coin ever consumed by the voting client. Onyx combines a [CHide-style](https://ieeexplore.ieee.org/document/10664323) cleansing-hiding pipeline with [MixNets](https://dl.acm.org/doi/10.1145/3576915.3616683) operating over a threshold [deniable FHE](https://link.springer.com/chapter/10.1007/978-3-030-84245-1_22) layer, via [Universal Thresholdizer](https://link.springer.com/chapter/10.1007/978-3-319-96884-1_19), and [Π_LA](https://link.springer.com/chapter/10.1007/978-3-031-91829-2_4) Verifiable Secret Sharing scheme.
 
 ## Layout
 
