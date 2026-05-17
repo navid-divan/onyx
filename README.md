@@ -30,7 +30,7 @@ To get a machine-readable JSON benchmark report:
 python3 run.py --mode quick --json
 ```
 
-The test harness checks and reports the wall-clock time spent in each Onyx phase: `Setup`, `Register`, `Vote`, `Valid`, `Fake`, `Tally`, `Verify`. Output is written to `stdout` so the harness can be run from any terminal.
+The test reports the wall-clock time spent in each Onyx phase: `Setup`, `Register`, `Vote`, `Valid`, `Fake`, `Tally`, `Verify`. Output is written to `stdout` so the harness can be run from any terminal.
 
 ## Verifying Individual Subsystems
 
