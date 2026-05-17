@@ -1,0 +1,35 @@
+{
+  "name": "Onyx",
+  "subtitle": "Post-Quantum Persistent Coercion-Resistant Voting from Deniable Encryption",
+  "modes": {
+    "quick": {
+      "description": "Reduced-dimension lattice parameters for end-to-end validation on constrained devices",
+      "security_level_bits": 80,
+      "voters_default": 4,
+      "candidates_default": 3
+    },
+    "production": {
+      "description": "",
+      "security_level_bits": 128,
+      "voters_default": 6,
+      "candidates_default": 3
+    }
+  },
+  "phases": [
+    "Setup",
+    "Register",
+    "Vote",
+    "Valid",
+    "Fake",
+    "Tally",
+    "Verify"
+  ],
+  "primitives": {
+    "dfhe": "BGV with biased decryption and δ-deniable selector aggregation",
+    "ut": "Universal Thresholdizer over BGV with {0,1}-LSSS",
+    "vss": "Hash-based Π_LA verifiable secret sharing",
+    "nizk": "Lattice-based prover-deniable NIZK with Micciancio-Peikert trapdoor",
+    "mixnet": "BGV verifiable mix-net with BDLOP commitments and distributed decryption",
+    "cleansing": "Odd-even merge sort cleansing pipeline using Eq, And, CGate gadgets"
+  }
+}
